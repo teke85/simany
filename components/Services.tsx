@@ -3,17 +3,17 @@ import { Code, Palette, Megaphone } from 'lucide-react'
 const services = [
   {
     icon: <Palette className="w-12 h-12 mb-4 text-red-500" />,
-    title: 'Web Design',
-    description: 'We create beautiful, responsive websites that look great on all devices.'
+    title: 'lorem',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
   },
   {
     icon: <Code className="w-12 h-12 mb-4 text-red-500" />,
     title: 'lorem ipsum',
-    description: 'Our developers build robust, scalable web applications using the latest technologies.'
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
   },
   {
     icon: <Megaphone className="w-12 h-12 mb-4 text-red-500" />,
-    title: 'Digital Marketing',
+    title: 'lorem ipsum',
     description: 'We help you reach your target audience and grow your online presence.'
   }
 ]
