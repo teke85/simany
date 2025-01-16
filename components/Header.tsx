@@ -28,7 +28,14 @@ const Header = () => {
     }
   };
 
-  const navItems = ["about", "services", "testimonials", "contact"];
+  const navItems = [
+    "about",
+    "services",
+    "pricing",
+    "why choose Us",
+    "testimonials",
+    "contact",
+  ];
 
   const NavLinks = () => (
     <ul className="space-y-4 md:space-y-0 md:flex md:space-x-6">
@@ -47,13 +54,9 @@ const Header = () => {
   );
 
   return (
-    <header
-      className={`fixed w-full z-10 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
-      }`}
-    >
+    <header className="w-full z-10 transition-all duration-300 mx-auto">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <Link href="/" className="text-4xl font-bold">
+        <Link href="/" className="text-4xl text-blue-600 font-bold">
           SPDS
         </Link>
 

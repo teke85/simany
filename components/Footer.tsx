@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h3 className="text-2xl font-bold">
-              Simany Professional Driving School
+              SPDS
             </h3>
             <p className="mt-2">Your first choice driving shool</p>
           </div>
