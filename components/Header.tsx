@@ -1,32 +1,32 @@
 "use client";
 
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Header = () => {
-  // const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setIsScrolled(window.scrollY > 0);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  // const scrollToSection = (
-  //   e: React.MouseEvent<HTMLAnchorElement>,
-  //   id: string
-  // ) => {
-  //   e.preventDefault();
-  //   const element = document.getElementById(id);
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const navItems = [
     "about",
@@ -38,12 +38,12 @@ const Header = () => {
   ];
 
   const NavLinks = () => (
-    <ul className="space-y-4 md:space-y-0 md:flex md:space-x-6">
+    <ul className="space-y-4 font-[family-name:var(--font-rethink)] md:space-y-0 md:flex md:space-x-6">
       {navItems.map((item) => (
         <li key={item}>
           <Link
             href={`#${item}`}
-            // onClick={(e) => scrollToSection(e, item)}
+            onClick={(e) => scrollToSection(e, item)}
             className="text-gray-600 hover:text-gray-900 transition-colors block py-2 md:py-0"
           >
             {item.charAt(0).toUpperCase() + item.slice(1)}
