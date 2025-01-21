@@ -17,10 +17,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    id: string
-  ) => {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
@@ -29,25 +26,34 @@ const Header = () => {
   };
 
   const navItems = [
-    "about",
-    "services",
-    "pricing",
-    "why choose Us",
-    "testimonials",
-    "contact",
+    { name: "about", scroll: true },
+    { name: "services", scroll: true },
+    { name: "pricing", scroll: false },
+    { name: "why choose Us", scroll: true },
+    { name: "testimonials", scroll: true },
+    { name: "contact", scroll: false },
   ];
 
   const NavLinks = () => (
     <ul className="space-y-4 font-[family-name:var(--font-rethink)] md:space-y-0 md:flex md:space-x-6">
       {navItems.map((item) => (
-        <li key={item}>
-          <Link
-            href={`#${item}`}
-            onClick={(e) => scrollToSection(e, item)}
-            className="text-gray-600 hover:text-gray-900 transition-colors block py-2 md:py-0"
-          >
-            {item.charAt(0).toUpperCase() + item.slice(1)}
-          </Link>
+        <li key={item.name}>
+          {item.scroll ? (
+            <a
+              href={`#${item.name}`}
+              onClick={(e) => scrollToSection(e, item.name)}
+              className="text-gray-600 hover:text-gray-900 transition-colors block py-2 md:py-0"
+            >
+              {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+            </a>
+          ) : (
+            <Link
+              href={`/${item.name.toLowerCase()}`} // Navigate to separate pages for "Pricing" and "Contact"
+              className="text-gray-600 hover:text-gray-900 transition-colors block py-2 md:py-0"
+            >
+              {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+            </Link>
+          )}
         </li>
       ))}
     </ul>
