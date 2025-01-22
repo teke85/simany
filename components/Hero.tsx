@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import CustomCarousel from "@/components/CustomCarousel";
 
 const Hero = () => {
   return (
@@ -22,7 +24,7 @@ const Hero = () => {
           </a>
         </div>
         <div className="md:w-1/2 h-full">
-         banner
+          <CustomCarousel />
         </div>
       </div>
     </section>

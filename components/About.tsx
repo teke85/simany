@@ -1,11 +1,11 @@
-import imgURL from "@/public/assets/photos/image_1.jpeg";
+import imgURL from "../public/assets/images/image_1.jpeg";
 import Image from "next/image";
 
 const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container font-[family-name:var(--font-lora)] mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-8 text-center">About Us</h2>
+        <h2 className="text-4xl font-bold mb-8 text-center">About Simany</h2>
         <div className="max-w-full md:max-w-5xl mx-auto flex gap-4 font-[family-name:var(--font-rethink)]">
           <div className="flex w-full gap-10 flex-col md:justify-between mx-auto md:flex-row">
             <div className="md:max-w-md flex flex-col justify-center items-center">
