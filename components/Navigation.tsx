@@ -1,0 +1,43 @@
+"use client";
+
+import Link from "next/link";
+import { Facebook, Twitter, Linkedin, Globe, Phone, Mail } from "lucide-react";
+
+export default function Navigation() {
+  return (
+    <nav className="w-full bg-white hidden lg:block">
+      {/* Top bar */}
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center text-sm text-gray-600">
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <Globe className="w-4 h-4" />
+            <select className="bg-transparent border-none outline-none">
+              <option>English</option>
+            </select>
+          </div>
+          <div className="flex gap-3">
+            <Link href="https://facebook.com" className="hover:text-[#022461]">
+              <Facebook className="w-4 h-4" />
+            </Link>
+            <Link href="https://twitter.com" className="hover:text-[#022461]">
+              <Twitter className="w-4 h-4" />
+            </Link>
+            <Link href="https://linkedin.com" className="hover:text-[#022461]">
+              <Linkedin className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+        <div className="flex items-center gap-6">
+          <Link href="#" className="flex items-center gap-2">
+            <Mail className="w-4 h-4" />
+            akabeswaimasikusnr@gmail.com
+          </Link>
+          <Link href="#" className="flex items-center gap-2">
+            <Phone className="w-4 h-4" />
+            (+260)-979944220
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+}

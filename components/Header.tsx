@@ -65,9 +65,12 @@ const Header = () => {
   // );
 
   return (
-    <header className="w-full z-10 transition-all duration-300 mx-auto">
-      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <Link href="/" className="text-4xl text-blue-600 font-bold">
+    <header className="w-full z-10 transition-all duration-300 mx-auto border-b-4 border-red-600">
+      <div className="bg-[#022461] mx-auto px-4 py-6 flex justify-between items-center">
+        <Link
+          href="/"
+          className="text-4xl text-white/55 font-[family-name:var(--font-lora)] font-bold"
+        >
           SPDS
         </Link>
 

@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import BackToTop from "@/components/BacktoTopBtn";
 import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${rethink.variable} ${lora.variable} ${geistMono.variable} antialiased`}
       >
+        <Navigation />
         <Header />
         {children}
         <BackToTop />

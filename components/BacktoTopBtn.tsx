@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const BackToTop = () => {
   const [showButton, setShowButton] = useState(false);
@@ -14,17 +14,17 @@ const BackToTop = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
@@ -33,7 +33,7 @@ const BackToTop = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 p-3 rounded-full bg-[#1D2430] text-white shadow-lg z-50 transition-opacity duration-300"
+          className="fixed bottom-4 right-4 p-3 rounded-full bg-red-500 text-white shadow-lg z-50 transition-opacity duration-300"
           aria-label="Scroll to top"
         >
           <span className="text-xl">↑</span>

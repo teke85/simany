@@ -7,6 +7,10 @@ images: {
       protocol: 'https',
       hostname: 'fakeimg.pl',
     },
+    {
+      protocol: 'https',
+      hostname: 'media.istockphoto.com',
+    }
   ],
 },
 };

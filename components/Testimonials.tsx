@@ -3,28 +3,30 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
-    image: "https://fakeimg.pl/250x250",
+    image: "/assets/images/student_1.jpeg",
     name: "Alex Thompson",
-    comment: "Thanks to this driving school, I passed my test on the first try! The instructors are patient and thorough."
+    comment:
+      "Thanks to this driving school, I passed my test on the first try! The instructors are patient and thorough.",
   },
   {
-    image: "https://fakeimg.pl/250x250",
-    name: "Sophia Lee",
-    comment: "I was nervous about learning to drive, but their step-by-step approach made it easy and enjoyable."
+    image: "/assets/images/student_2.jpeg",
+    name: "Maureen Ngolofwana",
+    comment: "I enjoyed learning with Mr Akabeswa he is very patient.",
   },
   {
-    image: "https://fakeimg.pl/250x250",
+    image: "/assets/images/student_5.jpeg",
     name: "Marcus Johnson",
-    comment: "The defensive driving course here is excellent. It's made me a much more confident and safe driver."
-  }
-]
+    comment:
+      "The defensive driving course here is excellent. It's made me a much more confident and safe driver.",
+  },
+];
 
 const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center">
-          What Our Clients Say
+        <h2 className="text-4xl text-[#022461] font-bold mb-12 font-[family-name:var(--font-rethink)] text-center">
+          What our students are saying about their driving lessons...
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (

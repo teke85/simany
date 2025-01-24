@@ -5,7 +5,7 @@ const links = [
   {
     id: 1,
     title: "About",
-    url: "/about",
+    url: "/about-our-driving-school",
   },
   {
     id: 2,

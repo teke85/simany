@@ -46,7 +46,7 @@ export default function PricingPage() {
           <ul className="space-y-4">
             {courseDetails.map((detail, index) => (
               <li key={index} className="flex justify-between items-start">
-                <span className="text-sm">{detail.item}</span>
+                <span className="text-md">{detail.item}</span>
                 <span className="font-semibold">{detail.price}</span>
               </li>
             ))}
@@ -59,9 +59,12 @@ export default function PricingPage() {
           <CardTitle>Terms and Conditions</CardTitle>
         </CardHeader>
         <CardContent>
-          <ol className="list-decimal list-inside space-y-2">
+          <ol className="list-decimal list-inside font-medium space-y-2">
             {termsAndConditions.map((term, index) => (
-              <li key={index} className="text-sm font-[family-name:var(--font-rethink)]">
+              <li
+                key={index}
+                className="text-md font-[family-name:var(--font-rethink)]"
+              >
                 {term}
               </li>
             ))}

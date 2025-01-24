@@ -39,7 +39,7 @@ const ServicesPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container font-[family-name:var(--font-rethink)] mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-center mb-8">Our Services</h1>
         <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
           We offer a range of driving courses tailored to meet your needs,
@@ -50,7 +50,7 @@ const ServicesPage: React.FC = () => {
             <ServiceCard key={index} {...service} />
           ))}
         </div>
-        <div className="mt-16 text-center">
+        <div className="font-[family-name:var(--font-rethink)] mt-16 text-center">
           <a
             href="#"
             className="bg-primary text-white font-semibold py-3 px-6 rounded-full hover:bg-primary-dark transition-colors duration-300"

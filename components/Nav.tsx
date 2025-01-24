@@ -5,7 +5,7 @@ const links = [
   {
     id: 1,
     title: "About",
-    url: "/about",
+    url: "/about-our-driving-school",
   },
   {
     id: 2,
@@ -19,6 +19,11 @@ const links = [
   },
   {
     id: 4,
+    title: "Gallery & Reviews",
+    url: "/gallery",
+  },
+  {
+    id: 5,
     title: "Pricing",
     url: "/pricing",
   },
@@ -31,14 +36,14 @@ const links = [
 
 const Nav = () => {
   return (
-    <nav className="flex gap-4">
+    <nav className="flex gap-4 items-center uppercase font-bold justify-center">
       {links.map((link) => (
         <Link
-          className="duration-500 text-black relative"
+          className="duration-500 text-white relative"
           key={link.id}
           href={link.url}
         >
-          <span className="font-[family-name:var(--font-rethink)]">
+          <span className="hover:text-red-500 duration-300 font-[family-name:var(--font-rethink)]">
             {link.title}
           </span>
         </Link>
