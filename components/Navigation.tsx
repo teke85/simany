@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { Facebook, Twitter, Linkedin, Globe, Phone, Mail } from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function Navigation() {
   return (
     <nav className="w-full bg-white hidden lg:block">
       {/* Top bar */}
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center text-sm text-gray-600">
+      <div className="container mx-auto px-8 py-2 flex justify-between items-center text-sm text-gray-600">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <Globe className="w-4 h-4" />
@@ -16,13 +17,19 @@ export default function Navigation() {
             </select>
           </div>
           <div className="flex gap-3">
-            <Link href="https://facebook.com" className="hover:text-[#022461]">
+            <Link
+              href="https://facebook.com"
+              className="hover:text-red-500 duration-300"
+            >
               <Facebook className="w-4 h-4" />
             </Link>
-            <Link href="https://twitter.com" className="hover:text-[#022461]">
+            <Link href="https://twitter.com" className="hover:text-red-500">
               <Twitter className="w-4 h-4" />
             </Link>
-            <Link href="https://linkedin.com" className="hover:text-[#022461]">
+            <Link
+              href="https://linkedin.com"
+              className="hover:text-red-500 duration-300"
+            >
               <Linkedin className="w-4 h-4" />
             </Link>
           </div>
@@ -33,8 +40,10 @@ export default function Navigation() {
             akabeswaimasikusnr@gmail.com
           </Link>
           <Link href="#" className="flex items-center gap-2">
-            <Phone className="w-4 h-4" />
-            (+260)-979944220
+            <Button variant="destructive">
+              <Phone className="w-4 h-4" />
+              (+260)-979944220
+            </Button>
           </Link>
         </div>
       </div>
