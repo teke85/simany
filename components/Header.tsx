@@ -91,7 +91,7 @@ const Header = () => {
         </Sheet>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:block">
+        <nav className="hidden lg:block">
           <Nav />
           {/* <NavLinks /> */}
         </nav>

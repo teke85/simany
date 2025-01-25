@@ -19,8 +19,8 @@ export default function Help() {
                 <MessageSquare className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Chat</h3>
-              <p className="flex flex-col items-center text-gray-600">
-                Text us at on WhatsApp <br />
+              <p className="flex flex-col items-center justify-center text-gray-600">
+                Text us on WhatsApp <br />
                 <a
                   href="tel:(800) 489-1896"
                   className="text-gray-600 hover:underline"
