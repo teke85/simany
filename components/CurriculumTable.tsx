@@ -5,7 +5,7 @@ const CurriculumTable: React.FC = () => {
     <div className="container mx-auto p-4">
       <table className="w-full text-left font-[family-name:var(--font-rethink)]">
         <thead>
-          <tr className="bg-gray-100">
+          <tr className="bg-[#022461] text-white">
             <th className="p-2 font-bold">WEEK</th>
             <th className="p-2 font-bold">SUBJECT</th>
             <th className="p-2 font-bold">TOOLS</th>
@@ -61,7 +61,6 @@ const CurriculumTable: React.FC = () => {
           <tr className="bg-gray-50">
             <td className="p-2"></td>
             <td className="p-2">Start up Procedure</td>
-            <td className="p-2">Car</td>
             <td className="p-2">Class/Car</td>
             <td className="p-2">RTSA</td>
           </tr>

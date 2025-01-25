@@ -43,7 +43,7 @@ const Nav = () => {
           key={link.id}
           href={link.url}
         >
-          <span className="hover:text-red-500 duration-300 font-[family-name:var(--font-rethink)]">
+          <span className="hover:text-red-500 duration-300 font-ligt font-[family-name:var(--font---font-rethink)]">
             {link.title}
           </span>
         </Link>

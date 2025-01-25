@@ -14,8 +14,13 @@ const links = [
   },
   {
     id: 3,
-    title: "Pricing",
-    url: "/pricing",
+    title: "Subjects We Teach",
+    url: "/subjects",
+  },
+  {
+    id: 4,
+    title: "Gallery & Review",
+    url: "/gallery",
   },
   {
     id: 4,

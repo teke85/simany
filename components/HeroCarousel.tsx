@@ -64,7 +64,7 @@ export default function HeroCarousel() {
             >
               <div className="absolute inset-0 bg-black/50" />
             </div>
-            <div className="relative h-full container mx-auto px-4 flex items-center">
+            <div className="relative h-full container mx-auto px-4 lg:px-10 flex items-center">
               <div className="max-w-2xl text-white">
                 <h1 className="text-4xl lg:text-6xl font-bold mb-4">
                   {slide.title}

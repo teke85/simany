@@ -78,7 +78,7 @@ const Header = () => {
         <Sheet>
           <SheetTrigger asChild className="md:hidden">
             <Button variant="ghost" size="icon">
-              <Menu className="h-6 w-6" />
+              <Menu className="h-10 w-10 text-white hover:text-black" />
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
