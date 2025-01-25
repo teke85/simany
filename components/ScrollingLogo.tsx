@@ -19,6 +19,7 @@ function ScrollingLogo() {
           alt={image.alt}
           width={40}
           height={40}
+          priority
         />
       ))}
       <span className="font-bold text-sm">RTSA ACCREDITED</span>
