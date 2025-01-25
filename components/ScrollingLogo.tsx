@@ -4,7 +4,7 @@ import React from "react";
 const images = [
   {
     id: 1,
-    src: "/assets/images/gallery/rtsa_logo.png",
+    src: "/assets/images/gallery/Rtsa_logo.png",
     alt: "Description of image 1",
   },
 ];
