@@ -6,7 +6,7 @@ const Hero = () => {
       id="hero"
       className="min-h-screen pt-50 h-[60vh] w-full flex items-center justify-center bg-gray-300"
     >
-      <div className="mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div className="mx-auto px-10 lg:px-4 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 flex flex-col items-start justify-center mb-8 md:mb-0">
           <h1 className="text-xl text-[#022461] lg:text-5xl tracking-normal text-start font-[family-name:var(--font-geist-mono)] font-bold mb-4">
             Welcome to Simany Professional Driving School Limited
