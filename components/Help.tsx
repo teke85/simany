@@ -14,12 +14,12 @@ export default function Help() {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <Card>
-            <CardContent className="p-6">
+            <CardContent className="p-6 flex items-center flex-col">
               <div className="rounded-full bg-red-500 p-3 w-fit mb-4">
                 <MessageSquare className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Chat</h3>
-              <p className="text-gray-600">
+              <p className="flex flex-col items-center text-gray-600">
                 Text us at on WhatsApp <br />
                 <a
                   href="tel:(800) 489-1896"
@@ -32,12 +32,12 @@ export default function Help() {
           </Card>
 
           <Card>
-            <CardContent className="p-6">
+            <CardContent className="p-6 flex items-center flex-col">
               <div className="rounded-full bg-red-500 p-3 w-fit mb-4">
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p className="text-gray-600">
+              <p className="flex flex-col items-center text-gray-600">
                 <a
                   href="mailto:hello@coastlineacademy.com"
                   className="text-gray-600"
@@ -49,14 +49,17 @@ export default function Help() {
           </Card>
 
           <Card>
-            <CardContent className="p-6">
-              <div className="rounded-full bg-red-500 p-3 w-fit mb-4">
+            <CardContent className="p-6 flex items-center flex-col">
+              <div className="rounded-full bg-red-500 p-3 w-fit mb-4 flex-col">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Phone</h3>
-              <p className="text-gray-600">
+              <p className="flex flex-col items-center text-gray-600">
                 Call us at{" "}
-                <a href="tel:(800) 489-1896" className="text-gray-600">
+                <a
+                  href="tel:(800) 489-1896 flex flex-col items-center"
+                  className="text-gray-600"
+                >
                   (260)-979944220
                 </a>
               </p>
