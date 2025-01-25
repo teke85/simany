@@ -22,8 +22,11 @@ const faqs = [
   },
   {
     question: "Where are lessons conducted?",
-    answer:
-      "a) Theory and Road Language(Signs) in the classroom at NAPSA. b) Practical start up at Mongu Stadium. c) Obstacle clearance and reverse drills at fra.",
+    answer: [
+      "Theory and Road Language(Signs) in the classroom at NAPSA.",
+      "Practical start up at Mongu Stadium.",
+      "Obstacle clearance and reverse drills at fra.",
+    ],
   },
 ];
 
@@ -42,7 +45,17 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent>{faq.answer}</AccordionContent>
+              <AccordionContent>
+                {Array.isArray(faq.answer) ? (
+                  <ul className="list-disc pl-5 space-y-2">
+                    {faq.answer.map((item, itemIndex) => (
+                      <li key={itemIndex}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  faq.answer
+                )}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
