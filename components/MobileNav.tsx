@@ -31,7 +31,7 @@ const links = [
 
 const MobileNav = () => {
   return (
-    <nav className="flex flex-col items-center space-y-10 justify-center h-full">
+    <nav className="flex flex-col items-left space-y-10 justify-center h-full">
       {links.map((link) => (
         <Link
           className="duration-500 text-black relative"
