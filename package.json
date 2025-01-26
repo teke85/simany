@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
+    "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-dialog": "^1.1.4",
-    "@googlemaps/js-api-loader": "^1.16.2",
+    "@radix-ui/react-select": "^2.1.5",
     "@radix-ui/react-slot": "^1.1.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -20,14 +22,16 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",
+    "react-hook-form": "^7.54.2",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/google.maps": "^3.54.3", 
+    "@types/google.maps": "^3.54.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

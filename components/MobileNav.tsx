@@ -31,14 +31,14 @@ const links = [
 
 const MobileNav = () => {
   return (
-    <nav className="flex flex-col">
+    <nav className="flex flex-col items-center space-y-10 justify-center h-full">
       {links.map((link) => (
         <Link
           className="duration-500 text-black relative"
           key={link.id}
           href={link.url}
         >
-          <span>{link.title}</span>
+          <span className="text-4xl">{link.title}</span>
         </Link>
       ))}
     </nav>

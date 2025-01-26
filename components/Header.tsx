@@ -76,9 +76,9 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <Sheet>
-          <SheetTrigger asChild className="md:hidden">
+          <SheetTrigger asChild className="lg:hidden">
             <Button variant="ghost" size="icon">
-              <Menu className="h-8 w-8 text-white hover:text-black" />
+              <Menu className="h-22 w-22 text-white hover:text-black" />
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
