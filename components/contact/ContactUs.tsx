@@ -149,7 +149,7 @@ const ContactUs = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full"
+                  className="w-full bg-red-500 hover:bg-red-500/90"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
