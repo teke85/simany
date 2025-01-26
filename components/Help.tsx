@@ -32,7 +32,7 @@ export default function Help() {
           </Card>
 
           <Card>
-            <CardContent className="p-6 lg:p-20 flex items-center flex-col">
+            <CardContent className="p-6 flex items-center flex-col">
               <div className="rounded-full bg-red-500 p-3 w-fit mb-4">
                 <Mail className="w-6 h-6 text-white" />
               </div>
