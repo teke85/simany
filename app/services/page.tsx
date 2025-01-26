@@ -6,12 +6,12 @@ const ServiceCard: React.FC<{
   description: string;
   icon: React.ReactNode;
 }> = ({ title, description, icon }) => (
-  <div className="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
-    <div className="flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
+  <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
+    <div className="flex flex-col items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
       {icon}
     </div>
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+    <p className="text-center text-gray-600">{description}</p>
   </div>
 );
 

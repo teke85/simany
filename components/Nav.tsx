@@ -36,7 +36,7 @@ const links = [
 
 const Nav = () => {
   return (
-    <nav className="flex gap-4 items-center uppercase font-bold justify-center">
+    <nav className="flex gap-4 items-center font-bold justify-center">
       {links.map((link) => (
         <Link
           className="duration-500 text-white relative"

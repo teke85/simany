@@ -1,6 +1,16 @@
 import Link from "next/link";
 import React from "react";
 
+interface links {
+  id: number;
+  title: string;
+  url: string;
+}
+
+interface MobileNavProps {
+  onLinkClick: () => void;
+}
+
 const links = [
   {
     id: 1,
@@ -29,7 +39,7 @@ const links = [
   },
 ];
 
-const MobileNav = () => {
+const MobileNav: React.FC<MobileNavProps> = ({ onLinkClick }) => {
   return (
     <nav className="flex flex-col items-left space-y-10 justify-center h-full">
       {links.map((link) => (
@@ -37,6 +47,7 @@ const MobileNav = () => {
           className="duration-500 text-black relative"
           key={link.id}
           href={link.url}
+          onClick={onLinkClick}
         >
           <span className="text-4xl">{link.title}</span>
         </Link>
@@ -44,5 +55,4 @@ const MobileNav = () => {
     </nav>
   );
 };
-
 export default MobileNav;
