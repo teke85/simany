@@ -19,7 +19,8 @@ const slides = [
   {
     title: "Start Your Journey Today",
     subtitle: "Get your license with confidence",
-    image: "/placeholder.svg?height=600&width=1200",
+    image:
+      "https://media.istockphoto.com/id/1270375911/photo/happy-african-girl-with-driving-license-showing-thumb-up.jpg?s=1024x1024&w=is&k=20&c=I_2jKJn0A9Ifg9ZYVGsDAJvE-FJb_8iBgvbrHtpccRs=",
   },
 ];
 
@@ -72,7 +73,7 @@ export default function HeroCarousel() {
                 <p className="text-xl mb-8">{slide.subtitle}</p>
                 <a
                   href="#contact"
-                  className="bg-red-500 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-yellow-600 transition-colors inline-block"
+                  className="bg-red-500 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-red-600/80 transition-colors inline-block"
                 >
                   Get Started
                 </a>
