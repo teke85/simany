@@ -53,7 +53,7 @@ const ServicesPage: React.FC = () => {
         <div className="font-[family-name:var(--font-rethink)] mt-16 text-center">
           <a
             href="#"
-            className="bg-primary text-white font-semibold py-3 px-6 rounded-full hover:bg-primary-dark transition-colors duration-300"
+            className="bg-primary text-white font-semibold py-3 px-6 rounded-full bg-red-600 hover:bg-red-600/80 transition-colors duration-300"
           >
             Book a Course
           </a>
