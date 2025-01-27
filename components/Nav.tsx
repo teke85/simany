@@ -39,11 +39,11 @@ const Nav = () => {
     <nav className="flex gap-4 items-center font-bold justify-center">
       {links.map((link) => (
         <Link
-          className="duration-500 text-white relative"
+          className="duration-500 text-white relative font-[family-name:var(--font-rethink)]"
           key={link.id}
           href={link.url}
         >
-          <span className="hover:text-red-500 duration-300 font-bold font-[family-name:var(--font---font-rethink)]">
+          <span className="hover:text-red-500 duration-300 font-bold font-[family-name:var(--font-rethink)]">
             {link.title}
           </span>
         </Link>

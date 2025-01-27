@@ -16,7 +16,7 @@ const Hero = () => {
           </p>
           <a
             href="#contact"
-            className="bg-red-500 font-[family-name:var(--font-rethink)] text-white px-6 py-3 rounded-full cursor-pointer text-lg font-semibold hover:bg-yellow-600 transition-colors"
+            className="bg-red-500 font-[family-name:var(--font-rethink)] text-white px-6 py-3 rounded-full cursor-pointer text-lg font-semibold hover:bg-red-600/80 transition-colors"
           >
             Get in touch
           </a>

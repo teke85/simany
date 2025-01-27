@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <nav className="w-full bg-white hidden lg:block">
       {/* Top bar */}
-      <div className="container mx-auto px-8 py-2 flex justify-between items-center text-sm text-gray-600">
+      <div className="container font-[family-name:var(--font-rethink)] mx-auto px-8 py-2 flex justify-between items-center text-sm text-gray-600">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <Globe className="w-4 h-4" />
