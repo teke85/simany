@@ -33,7 +33,7 @@ const links = [
     url: "/gallery",
   },
   {
-    id: 4,
+    id: 5,
     title: "Contact Us",
     url: "/contact",
   },

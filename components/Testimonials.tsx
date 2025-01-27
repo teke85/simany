@@ -31,7 +31,7 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="overflow-hidden">
-              <CardContent className="p-6 flex flex-col items-center text-center">
+              <CardContent className="p-6 flex flex-col font-[family-name:var(--font-rethink)] items-center text-center">
                 <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4">
                   <Image
                     src={testimonial.image || "/placeholder.svg"}
@@ -40,10 +40,12 @@ const Testimonials = () => {
                     objectFit="cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-xl font-semibold mb-2 font-[family-name:var(--font-rethink)]">
                   {testimonial.name}
                 </h3>
-                <p className="text-gray-600">{testimonial.comment}</p>
+                <p className="text-gray-600 font-[family-name:var(--font-rethink)]">
+                  {testimonial.comment}
+                </p>
               </CardContent>
             </Card>
           ))}
