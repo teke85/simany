@@ -33,7 +33,7 @@ const BackToTop = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-20 right-10 p-3 rounded-full bg-red-500 text-white/90 shadow-lg z-50 transition-opacity duration-300"
+          className="fixed bottom-24 right-10 p-3 rounded-full bg-red-500 text-white/90 shadow-lg z-50 transition-opacity duration-300"
           aria-label="Scroll to top"
         >
           <span className="text-xl">↑</span>
