@@ -42,13 +42,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <nav className="flex flex-col space-y-2">
               <Link
-                href="/"
+                href="/high-way-code"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Highway Code
               </Link>
               <Link
-                href="/lessons"
+                href="/"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Simany Student Application Form
