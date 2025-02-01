@@ -7,7 +7,6 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import HeroCarousel from "@/components/HeroCarousel";
 import Marquee from "@/components/Marquee";
 
-
 export default function Home() {
   return (
     <main className="text-gray-900 max-w-9xl mx-auto">
