@@ -55,7 +55,7 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 font-[family-name:var(--font-rethink)]">
           <Card>
             <CardHeader className="text-gray-500">
-              <CardTitle>Business Information</CardTitle>
+              <CardTitle className="text-2xl">Business Information</CardTitle>
               <CardDescription>Get in touch with us</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -66,9 +66,12 @@ const ContactUs = () => {
                   Mongu.
                 </span>
               </div>
-              <div className="flex items-center space-x-4 text-gray-500">
+              <div className="flex items-start space-x-4 text-gray-500">
                 <Phone size={32} className="text-red-500" />
-                <span>+260979-944220</span>
+                <div className="flex flex-col">
+                  <span>+260979-944220</span>
+                  <span>+260966-944220</span>
+                </div>
               </div>
               <div className="flex items-center space-x-4 text-gray-500">
                 <Mail size={32} className="text-red-500" />
@@ -82,7 +85,9 @@ const ContactUs = () => {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Contact Form</CardTitle>
+              <CardTitle className="text-2xl text-gray-500">
+                Get in Touch
+              </CardTitle>
               <CardDescription>Send us a message</CardDescription>
             </CardHeader>
             <CardContent>
