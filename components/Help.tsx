@@ -60,7 +60,7 @@ export default function Help() {
                   href="tel:(800) 489-1896 flex flex-col items-center"
                   className="text-gray-600"
                 >
-                  (260)-979944220
+                  (260)-966-944220
                 </a>
               </p>
             </CardContent>

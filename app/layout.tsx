@@ -3,8 +3,9 @@ import { Geist, Geist_Mono, Lora, Rethink_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import BackToTop from "@/components/BacktoTopBtn";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/FooterV2";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/FooterV2";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,14 @@ export default function RootLayout({
         <Header />
         {children}
         <BackToTop />
+        <script
+          src="https://static.elfsight.com/platform/platform.js"
+          async
+        ></script>
+        <div
+          className="elfsight-app-c9b0f805-c264-482d-81ef-1bf55f36b832"
+          data-elfsight-app-lazy
+        ></div>
         <Footer />
       </body>
     </html>

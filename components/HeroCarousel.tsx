@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
@@ -42,18 +43,44 @@ export default function HeroCarousel() {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
+  const textVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+    }),
+  };
+
   return (
     <section className="relative h-[80vh] w-full overflow-hidden">
       {/* Carousel */}
-      <div
-        className="absolute inset-0 transition-transform duration-500 ease-in-out"
-        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-      >
+      <AnimatePresence initial={false} custom={currentSlide}>
         {slides.map((slide, index) => (
-          <div
+          <motion.div
             key={index}
-            className="absolute inset-0 w-full h-full"
-            style={{ left: `${index * 100}%` }}
+            custom={currentSlide}
+            variants={{
+              enter: (direction: number) => ({
+                x: direction > 0 ? "100%" : "-100%",
+                opacity: 0,
+              }),
+              center: { x: 0, opacity: 1 },
+              exit: (direction: number) => ({
+                x: direction < 0 ? "100%" : "-100%",
+                opacity: 0,
+              }),
+            }}
+            initial="enter"
+            animate={index === currentSlide ? "center" : "exit"}
+            exit="exit"
+            transition={{
+              x: { type: "spring", stiffness: 300, damping: 30 },
+              opacity: { duration: 0.2 },
+            }}
+            className={`absolute inset-0 w-full h-full ${
+              index === currentSlide ? "block" : "hidden"
+            }`}
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
@@ -66,22 +93,42 @@ export default function HeroCarousel() {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative h-full container mx-auto px-16 lg:px-10 flex items-center">
-              <div className="max-w-2xl text-white font-[family-name:var(--font-rethink)]">
-                <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+              <motion.div
+                className="max-w-2xl text-white font-[family-name:var(--font-rethink)]"
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                variants={{
+                  visible: { transition: { staggerChildren: 0.2 } },
+                }}
+              >
+                <motion.h1
+                  variants={textVariants}
+                  custom={0}
+                  className="text-4xl lg:text-6xl font-bold mb-4"
+                >
                   {slide.title}
-                </h1>
-                <p className="text-xl mb-8">{slide.subtitle}</p>
-                <a
+                </motion.h1>
+                <motion.p
+                  variants={textVariants}
+                  custom={1}
+                  className="text-xl mb-8"
+                >
+                  {slide.subtitle}
+                </motion.p>
+                <motion.a
                   href="#contact"
+                  variants={textVariants}
+                  custom={2}
                   className="bg-red-500 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-red-600/80 transition-colors inline-block"
                 >
                   Get Started
-                </a>
-              </div>
+                </motion.a>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </AnimatePresence>
 
       {/* Navigation buttons */}
       <button

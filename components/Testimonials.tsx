@@ -4,9 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 const testimonials = [
   {
     image: "/assets/images/student_1.jpeg",
-    name: "Alex Thompson",
-    comment:
-      "Thanks to this driving school, I passed my test on the first try! The instructors are patient and thorough.",
+    name: "Patton Chinga",
+    comment: "I can advise would be drivers to come to Simany!",
   },
   {
     image: "/assets/images/student_2.jpeg",
@@ -15,9 +14,8 @@ const testimonials = [
   },
   {
     image: "/assets/images/student_5.jpeg",
-    name: "Marcus Johnson",
-    comment:
-      "The defensive driving course here is excellent. It's made me a much more confident and safe driver.",
+    name: "Br Kennedy Phiri",
+    comment: "The School is Excellent.",
   },
 ];
 

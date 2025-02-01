@@ -48,34 +48,34 @@ const ContactUs = () => {
   return (
     <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-12 text-left font-[family-name:var(--font-rethink)]">
+        <h1 className="text-4xl font-bold mb-12 text-left text-gray-500 font-[family-name:var(--font-rethink)]">
           Need a driving lesson? Want to make changes to your scheduled lessons?
           Have questions about the process? We are here to help!
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 font-[family-name:var(--font-rethink)]">
           <Card>
-            <CardHeader>
+            <CardHeader className="text-gray-500">
               <CardTitle>Business Information</CardTitle>
               <CardDescription>Get in touch with us</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-4">
-                <MapPin className="text-red-500" />
-                <span className="font-[family-name:var(--font-rethink)]">
+                <MapPin size={32} className="text-red-500" />
+                <span className="font-[family-name:var(--font-rethink)] text-gray-500">
                   Napsa Building, Ground Floor, Room No. 12/13 Northern Wing,
                   Mongu.
                 </span>
               </div>
-              <div className="flex items-center space-x-4">
-                <Phone className="text-red-500" />
+              <div className="flex items-center space-x-4 text-gray-500">
+                <Phone size={32} className="text-red-500" />
                 <span>+260979-944220</span>
               </div>
-              <div className="flex items-center space-x-4">
-                <Mail className="text-red-500" />
+              <div className="flex items-center space-x-4 text-gray-500">
+                <Mail size={32} className="text-red-500" />
                 <span>akabeswaimasikusnr@gmail.com</span>
               </div>
-              <div className="flex items-center space-x-4">
-                <Clock className="text-red-500" />
+              <div className="flex items-center space-x-4 text-gray-500">
+                <Clock size={32} className="text-red-500" />
                 <span>Mon-Fri: 9AM-5PM</span>
               </div>
             </CardContent>

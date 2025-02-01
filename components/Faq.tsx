@@ -25,7 +25,7 @@ const faqs = [
     answer: [
       "Theory and Road Language(Signs) in the classroom at NAPSA.",
       "Practical start up at Mongu Stadium.",
-      "Obstacle clearance and reverse drills at fra.",
+      "Obstacle clearance and reverse drills at FRA.",
     ],
   },
 ];
@@ -34,7 +34,7 @@ export default function FAQ() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container font-[family-name:var(--font-rethink)] mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold text-center mb-12 text-[#022461]">
           Frequently Asked Questions
         </h2>
         <Accordion
