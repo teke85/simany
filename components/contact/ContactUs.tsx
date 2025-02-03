@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import React from "react";
+import LeafletMap from "../LeafletMap";
 
 const ContactUs = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -166,6 +167,9 @@ const ContactUs = () => {
               )}
             </CardContent>
           </Card>
+        </div>
+        <div className="w-full h-full p-5">
+          <LeafletMap />
         </div>
       </div>
     </section>

@@ -27,7 +27,7 @@ const Header: React.FC = () => {
     <>
       {/* Static header for initial view */}
       <header
-        className={`w-full z-40 bg-[#022461] transition-all duration-300 ${
+        className={`w-full z-50 bg-[#022461] transition-all duration-300 ${
           isScrolled ? "hidden" : "block"
         }`}
       >
