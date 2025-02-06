@@ -29,7 +29,7 @@ const LeafletMap = () => {
       <MapContainer center={position} zoom={15} className="h-[400px] w-full">
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <Marker position={position} icon={customMarker}>
-          <Popup>Your Location</Popup>
+          <Popup>Simany Professional Driving School Limited</Popup>
         </Marker>
       </MapContainer>
     </div>

@@ -23,7 +23,12 @@ import {
 } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import React from "react";
-import LeafletMap from "../LeafletMap";
+import dynamic from "next/dynamic";
+
+const LeafletMap = dynamic(() => import("../LeafletMap"), {
+  ssr: false,
+  loading: () => <p>Loading map...</p>,
+});
 
 const ContactUs = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
