@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactFormSchema, type ContactFormData } from "./schema";
 import { Button } from "@/components/ui/button";
@@ -31,6 +31,7 @@ const ContactUs = () => {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors },
     reset,
   } = useForm<ContactFormData>({
@@ -46,6 +47,7 @@ const ContactUs = () => {
     setSubmitSuccess(true);
     reset();
   };
+
   return (
     <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
@@ -119,21 +121,28 @@ const ContactUs = () => {
                   )}
                 </div>
                 <div>
-                  <Select
-                    onValueChange={(value) =>
-                      register("questionType").onChange({ target: { value } })
-                    }
-                  >
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select question type" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="general">General Inquiry</SelectItem>
-                      <SelectItem value="support">Support</SelectItem>
-                      <SelectItem value="sales">Sales</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectContent>
-                  </Select>
+                  <Controller
+                    name="questionType"
+                    control={control}
+                    render={({ field }) => (
+                      <Select
+                        onValueChange={field.onChange}
+                        value={field.value}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select question type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="general">
+                            General Inquiry
+                          </SelectItem>
+                          <SelectItem value="support">Support</SelectItem>
+                          <SelectItem value="sales">Sales</SelectItem>
+                          <SelectItem value="other">Other</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    )}
+                  />
                   {errors.questionType && (
                     <p className="text-red-500 text-sm mt-1">
                       {errors.questionType.message}

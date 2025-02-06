@@ -6,6 +6,7 @@ import BackToTop from "@/components/BacktoTopBtn";
 // import Footer from "@/components/FooterV2";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/FooterV2";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,6 +51,7 @@ export default function RootLayout({
         <Header />
         {children}
         <BackToTop />
+        <Toaster />
         <script
           src="https://static.elfsight.com/platform/platform.js"
           async

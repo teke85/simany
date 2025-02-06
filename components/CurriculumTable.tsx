@@ -50,7 +50,6 @@ const CurriculumTable: React.FC = () => {
             <td className="p-2" colSpan={4}>
               MOCK +
             </td>
-            <td className="p-2"></td>
           </tr>
           <tr>
             <td className="p-2" colSpan={4}>
