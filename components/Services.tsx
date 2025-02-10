@@ -14,7 +14,7 @@ const services = [
     icon: <Code className="w-12 h-12 mb-4 text-red-500" />,
     title: "Short refresher courses",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Brush up on your driving skills or address specific areas of improvement with our targeted, efficient refresher courses.",
   },
   {
     icon: <Megaphone className="w-12 h-12 mb-4 text-red-500" />,

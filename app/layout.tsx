@@ -33,10 +33,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Simany Driving School",
-  description: "Simany Driving School | Your First Choice Driving School",
+  title: {
+    default: "Simany Driving School",
+    template: "%s - Simany Driving School",
+  },
+  description: "Your First Choice Driving School",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
