@@ -20,7 +20,7 @@ const services = [
     icon: <Megaphone className="w-12 h-12 mb-4 text-red-500" />,
     title: "Road Language",
     description:
-      "We help you reach your target audience and grow your online presence.",
+      "We specialize in translating complex transportation terminology into clear, accessible communication. Our expertise helps organizations effectively convey road safety information, traffic regulations, and navigation guidance to diverse audiences, enhancing public understanding and improving road safety outcomesWe specialize in translating complex transportation terminology into clear, accessible communication. Our expertise helps organizations effectively convey road safety information, traffic regulations, and navigation guidance to diverse audiences, enhancing public understanding and improving road safety outcomes.e.",
   },
 ];
 

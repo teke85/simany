@@ -29,11 +29,16 @@ const links = [
   },
   {
     id: 4,
+    title: "Pricing",
+    url: "/pricing",
+  },
+  {
+    id: 5,
     title: "Gallery & Review",
     url: "/gallery",
   },
   {
-    id: 5,
+    id: 6,
     title: "Contact Us",
     url: "/contact",
   },
