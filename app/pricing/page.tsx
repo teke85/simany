@@ -4,7 +4,7 @@ export default function PricingPage() {
   const courseDetails = [
     {
       item: "Full driving course for 21 working days (inclusive of tuition, car fuel on class B - Manual)",
-      price: "K2,500.00",
+      price: "K3,000.00",
     },
     {
       item: "Medical Certificate (Lewanika General Hospital)",
