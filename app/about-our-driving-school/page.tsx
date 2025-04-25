@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { AboutSection } from "@/components/about-section";
 import { KeyValues } from "@/components/key-values";
+import { Metadata } from "next";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,6 +26,18 @@ const itemVariants = {
       ease: "easeOut",
     },
   },
+};
+
+export const metadata: Metadata = {
+  title: "About Us | Simany Driving School Mongu",
+  description:
+    "Learn about Simany Driving School in Mongu. Our experienced instructors, teaching methodology, and commitment to road safety education.",
+  keywords: [
+    "about Simany",
+    "driving instructors Mongu",
+    "driving school history",
+    "Simany team",
+  ],
 };
 
 export default function AboutPage() {

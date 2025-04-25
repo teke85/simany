@@ -34,12 +34,37 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Simany Driving School",
-    template: "%s - Simany Driving School",
+    template: "%s | Simany Driving School Mongu",
+    default: "Simany Driving School - Professional Driving Lessons in Mongu",
   },
-  description: "Your First Choice Driving School",
+  description:
+    "Professional driving school in Mongu offering comprehensive driving lessons, road safety education, and license preparation for all types of vehicles.",
+  keywords: [
+    "driving school",
+    "Mongu",
+    "Simany",
+    "driving lessons",
+    "driver education",
+    "Zambia",
+  ],
+  metadataBase: new URL("https://www.simanydrivingschool.online"),
+  openGraph: {
+    title: "Simany Driving School - Professional Driving Lessons in Mongu",
+    description:
+      "Professional driving school in Mongu offering comprehensive driving lessons, road safety education, and license preparation for all types of vehicles.",
+    url: "https://www.simanydrivingschool.online",
+    siteName: "Simany Driving School",
+    locale: "en_US",
+    type: "website",
+  },
   twitter: {
     card: "summary_large_image",
+    title: "Simany Driving School - Professional Driving Lessons in Mongu",
+    description:
+      "Professional driving school in Mongu offering comprehensive driving lessons, road safety education, and license preparation for all types of vehicles.",
+  },
+  verification: {
+    google: "your-google-verification-code", // You'll need to replace this with your actual verification code
   },
 };
 export default function RootLayout({
