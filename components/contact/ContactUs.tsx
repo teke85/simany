@@ -143,6 +143,9 @@ const ContactUs = () => {
                           </SelectItem>
                           <SelectItem value="support">Support</SelectItem>
                           <SelectItem value="sales">Sales</SelectItem>
+                          <SelectItem value="sales">
+                            Refresher Course
+                          </SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
